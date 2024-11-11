@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
 const Myfile = () => {
-  const [selectedPic, setSelectedPic] = useState("boys");
+  const [selectedPic, setSelectedPic] = useState("base");
 
   const images = {
-    boys: "https://i.pinimg.com/736x/09/43/1d/09431d5d09e2f0af5aff9827d584f252.jpg", // replace with the URL for boys' image
+    boys: "https://i.pinimg.com/736x/09/43/1d/09431d5d09e2f0af5aff9827d584f252.jpg", 
     girls:
       "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/14334755-dbc4-456e-aec8-043257e724ed/bdbe3802-c024-40be-bf75-fd800547d677.png", // replace with the URL for girls' image
     other:
-      "https://nurserylive.com/cdn/shop/products/nurserylive-plants-rose-pink-plant_600x600.png?v=1670223566", // replace with the URL for rose image
+      "https://nurserylive.com/cdn/shop/products/nurserylive-plants-rose-pink-plant_600x600.png?v=1670223566", 
+      base:
+      "https://t4.ftcdn.net/jpg/03/35/64/35/360_F_335643536_8ZiY9xH2KU4FIaZToBTpL7BVQLynA3w9.jpg"
   };
 
   return (
@@ -34,7 +36,7 @@ const Myfile = () => {
       </div>
 
       <div className=" flex items-center justify-center  mt-20 mx-auto">
-        <img  src={images[selectedPic]} className="w-56 h-56 rounded-xl" />
+        <img  src={images[selectedPic]} className="w-56 h-56 rounded-xl border-4 border-black" />
       </div>
     </div>
   );
